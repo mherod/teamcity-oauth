@@ -9,7 +9,6 @@
             .loginForm {
                 display: none;
             }
-
             .oauth-guest-section {
                 text-align: right;
                 padding-top: 0.5em;
@@ -19,7 +18,7 @@
     <div>
         <form action="<c:url value='${oauthLoginUrl}'/>" method="GET">
             <input class="btn loginButton" style="margin: auto; display: block" type="submit" name="submitLogin"
-                   value="Log in via oAuth">
+                   value="Sign-in with Google">
             <c:if test="${oauth2_settings.hideLoginForm and oauth2_settings.guestLoginAllowed}">
                 <div class="oauth-guest-section">
                     <span class="greyNote">
